@@ -37,5 +37,27 @@ data:{
     "employee_age": "00"
   }
 
+retrieve
+
+method:get
+url:/api/employee/id
+data:nil
 
 
+update
+
+method:put
+url: /api/employee/id/
+data:{yes}
+
+delete
+
+method:delete
+url:/api/employee/id/
+data:nil
+
+
+class Viewset
+method:get,post,put,delete
+url:/api/v2/employee/
+id and data as needed
