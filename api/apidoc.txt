@@ -1,0 +1,41 @@
+
+C  \ /  get
+R  / \  post
+U        put
+D        delete
+
+
+pip install django restframework
+settings-->installed apps
+python manage.py startapp api
+installed apps
+main url include
+in api app new file urls.py
+in api new file apidoc.txt
+in api new file serializers.py
+serializers.py--->class employeeserializer
+views.py----->class employeelistcreate
+
+thunderclient--collections--new collections employee rightclick new request get runserver url/api/employee
+
+
+READ
+
+method:get
+url:http://127.0.0.1:8000/api/employee
+data:nil
+
+
+create
+
+method:post
+url:http://127.0.0.1:8000/api/employee
+data:{
+    "employee_name": "ooiii",
+    "employee_position": "ooii",         #get-copy content and paste without id
+    "employee_place": "ooii",
+    "employee_age": "00"
+  }
+
+
+
